@@ -3,9 +3,9 @@ package com.htcursos.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.htcursos.model.Perfil;
+import com.htcursos.model.Reinvidicacao;
 
 @Repository
-public interface PerfilRepository extends JpaRepository<Perfil, Short>{
+public interface ReinvidicacaoRepository extends JpaRepository<Reinvidicacao ,Long> {
 
 }

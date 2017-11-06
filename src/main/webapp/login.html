@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Jweb2 - Login</title>
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+<link rel="stylesheet" href="css/login.css">
+<script src="js/login.js"></script>
 
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 </head>
 <body>
-	<nav class="light-blue darken-2">
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">Logo</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="sass.html">Sass</a></li>
-				<li><a href="badges.html">Components</a></li>
-				<li><a href="collapsible.html">JavaScript</a></li>
-			</ul>
-		</div>
-	</nav>
-
-
-	<div class="row">
-		<form class="card-panel col m6 offset-m3">
-
-			<div class="row">
-				<div class="input-field col s12">
-					<input id="login" type="text" class="validate"> <label
-						for="login">Login</label>
-				</div>
-			</div> 
-			<div class="row">
-				<div class="input-field col s12">
-					<input id="password" type="password" class="validate"> <label
-						for="password">Password</label>
-				</div>
-			</div>
-			
-			<div class="row center">
-				<button type="submit" class="btn">Entrar</button>
-			</div>
-
-		</form>
+	<div id="Login-Button">
+		<img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+		</img>
 	</div>
+	<div id="container">
+  		<h1>Log In</h1>
+  <span class="close-btn">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+  </span>
+  
+  <form>
+    <input type="email" name="email" placeholder="E-mail">
+    <input type="password" name="pass" placeholder="Password">
+    	<a href="#">Log in</a>
+    <div id="remember-container">
+      <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked"/>
+      <span id="remember">Remember me</span>
+      <span id="forgotten">Forgotten password</span>
+    </div>
+</form>
+</div>
 
+<div id="forgotten-container">
+   <h1>Forgotten</h1>
+  <span class="close-btn">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+  </span>
+
+  <form>
+    <input type="email" name="email" placeholder="E-mail">
+    <a href="#" class="orange-btn">Get new password</a>
+</form>
+</div>
 </body>
 </html>
