@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Jweb2 - Perfil</title>
+<title>GreenSystem Assessoria</title>
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-
+	
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
 	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	crossorigin="anonymous"></script>
@@ -19,47 +19,65 @@
 
 </head>
 <body>
-	<nav class="light-blue darken-2">
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">JWEB2</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="perfil.html">Perfil</a></li>
-				<li><a href="usuario.html">Usuario</a></li>
-			</ul>
-		</div>
-	</nav>
-
-	<div class="row center">
-		<h2>Cadastro de Perfil</h2>
-	</div>
-
-	<div class="row">
-		<form class="card-panel col m6 offset-m3">
-
-			<div class="row">
-				<div class="input-field col s12">
-					<input id="descricao" type="text" class="validate"> <label
-						for="descricao">Descricao</label>
-				</div>
-
-				<div class="row center">
-					<button onclick="salvar()" type="button" class="btn">Salvar</button>
-				</div>
-		</form>
-	</div>
 	
-	<div class="row">
-		<table class="higthlight">
-			<thead>
-				<tr>
-				<th>Descricao</th>
-				</tr>
-			</thead>
-			
-			<tbody id="tabelaPerfil">
-			</tbody>
-		</table>	
-	</div>
-
+	<ul id="dropdown1" class="dropdown-content">
+  		<li><a href="cadastrocliente.html">Clientes</a></li>
+  		<li><a href="cadastrofuncionario.html">Funcionarios</a></li>
+ 		<li class="divider"></li>
+ 		<li><a href="cadastrocandidato.html">Candidato</a></li>
+	</ul>
+	<ul id="dropdown2" class="dropdown-content">
+  		<li><a href="listaclientes.html">Clientes</a></li>
+  		<li><a href="listausuarios">Usuários</a></li>
+ 		<li class="divider"></li>
+ 		<li><a href="listareinvidi.html">Reinvidicações</a></li>
+ 		<li class="divider"></li>
+ 		<li><a href="#!">Reuniões</a></li>
+	</ul>
+	
+<nav class="light-green darken-2 z-depth-5">
+  <div class="nav-wrapper">
+    <img width="125" src="imagens/GREEN SYSTEM ASSESSORIA.png">
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">C a d a s t r o s<i></i></a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown2">R e l a t ó r i o s<i></i></a></li>
+      <li><a href="Página Inicial">A g e n d a</a></li>
+    </ul>
+  </div>
+</nav>
+		<div class="row center">
+			<form class="card-panel  col m8 offset-m2 z-depth-2">
+			<img width="550" src="imagens/GREEN SYSTEM ASSESSORIA.png">
+			</form>
+		</div>
+		
+		<footer class="page-footer light-green darken-2">
+          <div class="container light-green darken-2">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Contato</h5>
+                <p class="grey-text text-lighten-4">Comercial:+55 (67) 99617-7023</p>
+                <p class="grey-text text-lighten-4">Comercial:+55 (67) 99242-6733</p>
+                <p class="grey-text text-lighten-4">E-mail: greensystemautomocao@gmail.com</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Serviços</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Suporte</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright green darken-4">
+            <div class="container">
+            © 2017 GreenSystem - Assessoria
+            <a class="grey-text text-lighten-4 right" href="#!">www.greensystem.com.br</a>
+            </div>
+          </div>
+        </footer>
+	
 </body>
 </html>

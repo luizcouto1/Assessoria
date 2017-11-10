@@ -31,6 +31,7 @@ img{
   opacity: 0.4;
   box-shadow: 10px 10px 30px #000;}
 
+/* Login container */
 #container{
   position: absolute;
   top: 0;
@@ -68,6 +69,7 @@ img{
   opacity: .5;
 }
 
+/* Heading */
 h1{
   font-family: 'Open Sans Condensed', sans-serif;
   position: relative;
@@ -78,6 +80,7 @@ h1{
   text-shadow: 3px 3px 10px #000;
 }
 
+/* Inputs */
 a,
 input{
   font-family: 'Open Sans Condensed', sans-serif;
@@ -104,11 +107,12 @@ input:focus{
   background: rgba(3,3,3,.18);
 }
 
+/* Placeholders */
 ::-webkit-input-placeholder {
    color: #ddd;  }
-:-moz-placeholder {
+:-moz-placeholder { /* Firefox 18- */
    color: red;  }
-::-moz-placeholder {
+::-moz-placeholder {  /* Firefox 19+ */
    color: red;  }
 :-ms-input-placeholder {  
    color: #333;  }

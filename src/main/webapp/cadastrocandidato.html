@@ -20,7 +20,6 @@
 <body>
 	<nav class="light-green darken-2 z-depth-5">
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo"></a>
 			<img width="125" src="imagens/GREEN SYSTEM ASSESSORIA.png">
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li><a href="telaprincipal.html">Página Inicial</a></li>
@@ -29,41 +28,30 @@
 	</nav>
 	
 	<div class="row center">
-		<h2 class="green-text text-darken-2">Cadastro de Cliente</h2>
+		<h2 class="green-text text-darken-2">Cadastro Candidato</h2>
 	</div>
 	
 	<div class="row">
 	
-	<form class="card-panel col m8 offset-m2 z-depth-5">
-	
-			<div class="row lefth">
-		     	<h4>Dados Pessoais:</h4>
-			</div>
-			<div class="row">
-			<div class="input-field col s8">
+	<form class="card-panel col m9 offset-m2 z-depth-5">
+		
+		<div class="row">
+			<div class="input-field col s6">
 					<input id="nome" type="text">
-					<label for="nome">Nome</label>
+					<label for="nome">Nome Completo:</label>
 			</div>
-			<div class="input-field col s4">
-					<input id="data_aniversario" type="text">
-					<label for="data_aniversario">Data de Aniversário:</label>
+			<div class="input-field col s6">
+					<input id="partido" type="text">
+					<label for="partido">Partido:</label>
 			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s6">
+					<input id="cargo_politico" type="text">
+					<label for="cargo_politico">Cargo Político:</label>
 			</div>
-			<div class="row">
-				<div class="input-field col s4">
-					<input id="cpf" type="text">
-					<label for="cpf">CPF:</label>
-				</div>
-				<div class="input-field col s4">
-					<input id="rg" type="text">
-					<label for="rg">RG:</label>
-				</div>
-				<div class="input-field col s4">
-					<input id="orgao_emissor" type="text">
-					<label for="orgao_emissor">Orgão Emissor:</label>
-				</div>
-			</div>
-			<div class="row">
+		</div>
+		<div class="row">
 				<div class="input-field col s4">
 					<input id="email" type="text">
 					<label for="email">E-mail:</label>
@@ -77,25 +65,6 @@
 						<label for="telefone">Telefone:</label>
 					</div>
 			</div>
-			<div class="row">
-				<div class="input-field col s3">
-					<input id="qtd_reside" type="text">
-					<label for="qtd_reside">Qtd reside:</label>
-				</div>
-				<div class="input-field col s3">
-					<input id="maiores_16" type="text">
-					<label for="maiores_16">Maiores de 16 anos:</label>
-				</div>
-				<div class="input-field col s3">
-					<input id="menores_16" type="text">
-					<label for="menores_16">Menores de 16 anos:</label>
-				</div>
-			</div>
-			
-			<div class="row lefth">
-		     	<h4>Endereço:</h4>
-			</div>
-			
 			<div class="row">
 				<div class="input-field col s5">
 					<input id="cep" type="text">
@@ -128,12 +97,8 @@
 					<label for="complemento">Complemento:</label>
 				</div>
 			</div>
-			<div class="row">
-				<div class="input-field col s12">
-					<input id="reinvidicacao" type="text">
-					<label for="reinvidicacao">*Reinvidicação:</label>
-				</div>
-			</div>
+		
+		
 			<div class="row center">
 				<button class="btn green" type="button" onclick="salvarCliente()">Salvar</button>
 			</div>

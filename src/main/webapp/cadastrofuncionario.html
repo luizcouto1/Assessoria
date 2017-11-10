@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<tittle>Cadastro de Clientes</tittle>
+<tittle>Cadastro de Funcionario</tittle>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	
@@ -29,7 +29,7 @@
 	</nav>
 	
 	<div class="row center">
-		<h2 class="green-text text-darken-2">Cadastro de Cliente</h2>
+		<h2 class="green-text text-darken-2">Cadastro de Funcionario</h2>
 	</div>
 	
 	<div class="row">
@@ -37,7 +37,7 @@
 	<form class="card-panel col m8 offset-m2 z-depth-5">
 	
 			<div class="row lefth">
-		     	<h4>Dados Pessoais:</h4>
+		     	<h4>Dados do Funcionario:</h4>
 			</div>
 			<div class="row">
 			<div class="input-field col s8">
@@ -46,7 +46,7 @@
 			</div>
 			<div class="input-field col s4">
 					<input id="data_aniversario" type="text">
-					<label for="data_aniversario">Data de Aniversário:</label>
+					<label for="data_aniversario">Cargo:</label>
 			</div>
 			</div>
 			<div class="row">
@@ -76,20 +76,6 @@
 						<input id="telefone" type="text">
 						<label for="telefone">Telefone:</label>
 					</div>
-			</div>
-			<div class="row">
-				<div class="input-field col s3">
-					<input id="qtd_reside" type="text">
-					<label for="qtd_reside">Qtd reside:</label>
-				</div>
-				<div class="input-field col s3">
-					<input id="maiores_16" type="text">
-					<label for="maiores_16">Maiores de 16 anos:</label>
-				</div>
-				<div class="input-field col s3">
-					<input id="menores_16" type="text">
-					<label for="menores_16">Menores de 16 anos:</label>
-				</div>
 			</div>
 			
 			<div class="row lefth">
@@ -127,12 +113,19 @@
 					<input id="complemento" type="text">
 					<label for="complemento">Complemento:</label>
 				</div>
-			</div>
-			<div class="row">
-				<div class="input-field col s12">
-					<input id="reinvidicacao" type="text">
-					<label for="reinvidicacao">*Reinvidicação:</label>
+				
+				<div class="row">
+				<div class="input-field col s7">
+					<input id="login" type="text">
+					<label for="login">Login:</label>
 				</div>
+				<div class="input-field col s7">
+					<input id="senha" type="password">
+					<label for="senha">Senha:</label>
+				</div>
+				</div>
+			
+				
 			</div>
 			<div class="row center">
 				<button class="btn green" type="button" onclick="salvarCliente()">Salvar</button>
