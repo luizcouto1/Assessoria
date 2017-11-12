@@ -3,7 +3,6 @@ package com.htcursos.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -19,26 +18,18 @@ public class ClienteController {
 	@Autowired
 	private ClienteRepository clienteRepository;
 	
-	@GetMapping(value = "/cliente")
+	@GetMapping(value = "/clientes")
 	public List<Cliente> buscarTodos(){
 		return clienteRepository.findAll();
-		
 	}
 	
-	@PostMapping(value = "/cliente")
+	@PostMapping(value = "/clientes")
 	public void cadastrarCliente(@RequestBody Cliente cliente) {
 		clienteRepository.save(cliente);
-		
 	}
-	
-	@PutMapping(value = "/cliente")
+	@PutMapping(value = "/clientes")
 	public void editarCliente(@RequestBody Cliente cliente) {
 		clienteRepository.save(cliente);
-	}
-	
-	@DeleteMapping(value = "/cliente")
-	public void removerCliente(@RequestBody Cliente cliente) { 
-		clienteRepository.delete(cliente);
 	}
 
 }

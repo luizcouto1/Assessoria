@@ -36,7 +36,7 @@ public class EnderecoController {
 		enderecoRepository.save(endereco);
 	}
 	
-	@DeleteMapping(value = "/clientes")
+	@DeleteMapping(value = "/enderecos")
 	public void removerEndereco(@RequestBody Endereco endereco) { 
 		enderecoRepository.delete(endereco);
 	}
