@@ -52,11 +52,11 @@
 			</div>
 			<div class="row">
 				<div class="input-field col s4">
-					<input id="cpf" type="text">
+					<input id="cpf" type="number" data-length="11">
 					<label for="cpf">CPF:</label>
 				</div>
 				<div class="input-field col s4">
-					<input id="rg" type="text">
+					<input id="rg" type="number">
 					<label for="rg">RG:</label>
 				</div>
 				<div class="input-field col s4">
@@ -66,15 +66,15 @@
 			</div>
 			<div class="row">
 				<div class="input-field col s4">
-					<input id="email" type="text">
-					<label for="email">E-mail:</label>
+					<input id="email" type="email" class="validate">
+					<label for="email" data-error="wrong" data-success="right">E-mail:</label>
 				</div>
 				<div class="input-field col s4">
-						<input id="celular" type="text">
+						<input id="celular" type="number">
 						<label for="celular">Celular:</label>
 					</div>
 					<div class="input-field col s4">
-						<input id="telefone" type="text">
+						<input id="telefone" type="number">
 						<label for="telefone">Telefone:</label>
 					</div>
 			</div>
@@ -85,7 +85,7 @@
 			
 			<div class="row">
 				<div class="input-field col s5">
-					<input id="cep" type="text">
+					<input id="cep" type="number" data-length="8">
 					<label for="cep">CEP:</label>
 				</div>
 			</div>
@@ -107,7 +107,7 @@
 					<label for="rua">Rua:</label>
 				</div>
 				<div class="input-field col s3">
-					<input id="numero" type="text">
+					<input id="numero" type="number">
 					<label for="numero">Número:</label>
 				</div>
 				<div class="input-field col s7">
@@ -121,7 +121,7 @@
 					<label for="login">Login:</label>
 				</div>
 				<div class="input-field col s7">
-					<input id="senha" type="password">
+					<input id="senha" type="password" class="validate">
 					<label for="senha">Senha:</label>
 				</div>
 				</div>

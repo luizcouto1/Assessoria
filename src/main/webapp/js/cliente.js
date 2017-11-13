@@ -58,9 +58,9 @@ function salvar(){
 		dataType: "json",
 	}).always(function(resposta){
 		if(resposta.status < 399){
-			Materialize.toast("Usuário salvo com sucesso", 4000);
+			Materialize.toast("Usuário salvo com sucesso", 6000);
 		}else{
-			Materialize.toast("Erro ao salvar o usuário", 4000);
+			Materialize.toast("Erro ao salvar o usuário", 6000);
 		}
 	});
 }
@@ -68,3 +68,4 @@ function salvar(){
 $(document).ready(function() {
 	buscarTodos();
 });
+

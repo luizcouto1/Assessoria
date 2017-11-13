@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<tittle>Cadastro de Clientes</tittle>
+<title>Cadastro de Candidatos</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	
@@ -40,47 +40,47 @@
 		
 		<div class="row">
 			<div class="input-field col s6">
-					<input id="nome" type="text">
-					<label for="nome">Nome Completo:</label>
+					<input id="nome" type="text" class="validate">
+					<label for="icon_prefix">Nome Completo:</label>
 			</div>
 			<div class="input-field col s6">
-					<input id="partido" type="text">
+					<input id="partido" type="text" class="validate">
 					<label for="partido">Partido:</label>
 			</div>
 		</div>
 		<div class="row">
 			<div class="input-field col s6">
-					<input id="cargoPolitico" type="text">
+					<input id="cargoPolitico" type="text" class="validate">
 					<label for="cargoPolitico">Cargo Político:</label>
 			</div>
 		</div>
 		<div class="row">
 				<div class="input-field col s4">
-					<input id="email" type="text">
-					<label for="email">E-mail:</label>
+					<input id="email" type="email" class="validate">
+					<label for="email"  data-error="wrong" data-success="right">E-mail:</label>
 				</div>
 				<div class="input-field col s4">
 						<input id="celular" type="number">
 						<label for="celular">Celular:</label>
 					</div>
 					<div class="input-field col s4">
-						<input id="telefone" type="text">
+						<input id="telefone" type="number">
 						<label for="telefone">Telefone:</label>
 					</div>
 			</div>
 			<div class="row">
 				<div class="input-field col s5">
-					<input id="cep" type="text">
-					<label for="cep">CEP:</label>
+					<input id="cep" type="number" data-length="8" >
+					<label for="input_text">CEP:</label>
 				</div>
 			</div>
 			<div class="row">
 				<div class="input-field col s5">
-					<input id="estado" type="text">
+					<input id="estado" type="text" >
 					<label for="estado">Estado:</label>
 				</div>
 				<div class="input-field col s5">
-					<input id="cidade" type="text">
+					<input id="cidade" type="text" >
 					<label for="cidade">Cidade:</label>
 				</div>
 				<div class="input-field col s5">
@@ -92,7 +92,7 @@
 					<label for="rua">Rua:</label>
 				</div>
 				<div class="input-field col s3">
-					<input id="numero" type="text">
+					<input id="numero" type="number" >
 					<label for="numero">Número:</label>
 				</div>
 				<div class="input-field col s7">
