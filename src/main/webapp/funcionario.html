@@ -14,7 +14,8 @@
 	<script
 	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js">
 </script>
-
+<script src="js/funcionario.js">
+</script>
 </head>
 
 <body>
@@ -45,8 +46,8 @@
 					<label for="nome">Nome</label>
 			</div>
 			<div class="input-field col s4">
-					<input id="data_aniversario" type="text">
-					<label for="data_aniversario">Cargo:</label>
+					<input id="cargo" type="text">
+					<label for="cargo">Cargo:</label>
 			</div>
 			</div>
 			<div class="row">
@@ -128,7 +129,7 @@
 				
 			</div>
 			<div class="row center">
-				<button class="btn green" type="button" onclick="salvarCliente()">Salvar</button>
+				<button class="btn green" type="button" onclick="salvar()">Salvar</button>
 			</div>
 	</form>
 	</div>

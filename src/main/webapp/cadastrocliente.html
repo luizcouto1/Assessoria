@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<tittle>Cadastro de Clientes</tittle>
+<title>Cadastro de Clientes</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	
@@ -13,6 +13,10 @@
 	
 	<script
 	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js">
+</script>
+
+<script src="js/cliente.js">
+
 </script>
 
 </head>
@@ -45,8 +49,8 @@
 					<label for="nome">Nome</label>
 			</div>
 			<div class="input-field col s4">
-					<input id="data_aniversario" type="text">
-					<label for="data_aniversario">Data de Aniversário:</label>
+					<input id="data_nascimento" type="text">
+					<label for="data_nascimento">Data de Nascimento:</label>
 			</div>
 			</div>
 			<div class="row">
@@ -79,16 +83,16 @@
 			</div>
 			<div class="row">
 				<div class="input-field col s3">
-					<input id="qtd_reside" type="text">
-					<label for="qtd_reside">Qtd reside:</label>
+					<input id="quantidade_residencia" type="text">
+					<label for="quantidade_residencia">Qtd reside:</label>
 				</div>
 				<div class="input-field col s3">
-					<input id="maiores_16" type="text">
-					<label for="maiores_16">Maiores de 16 anos:</label>
+					<input id="maioresde16" type="text">
+					<label for="maioresde16">Maiores de 16 anos:</label>
 				</div>
 				<div class="input-field col s3">
-					<input id="menores_16" type="text">
-					<label for="menores_16">Menores de 16 anos:</label>
+					<input id="menoresde16" type="text">
+					<label for="menoresde16">Menores de 16 anos:</label>
 				</div>
 			</div>
 			
@@ -130,13 +134,16 @@
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
-					<input id="reinvidicacao" type="text">
-					<label for="reinvidicacao">*Reinvidicação:</label>
+					<input id="reinvendicacao" type="text">
+					<label for="reinvendicacao">*Reinvidicação:</label>
 				</div>
 			</div>
 			<div class="row center">
-				<button class="btn green" type="button" onclick="salvarCliente()">Salvar</button>
+				<button class="btn green" onclick="salvar()">Salvar</button>
 			</div>
+			
+
+	</div>
 	</form>
 	</div>
      			

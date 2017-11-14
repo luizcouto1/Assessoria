@@ -15,6 +15,9 @@
 	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js">
 </script>
 
+<script src="js/candidato.js">
+</script>
+
 </head>
 
 <body>
@@ -47,8 +50,8 @@
 		</div>
 		<div class="row">
 			<div class="input-field col s6">
-					<input id="cargo_politico" type="text">
-					<label for="cargo_politico">Cargo Político:</label>
+					<input id="cargoPolitico" type="text">
+					<label for="cargoPolitico">Cargo Político:</label>
 			</div>
 		</div>
 		<div class="row">
@@ -57,7 +60,7 @@
 					<label for="email">E-mail:</label>
 				</div>
 				<div class="input-field col s4">
-						<input id="celular" type="text">
+						<input id="celular" type="number">
 						<label for="celular">Celular:</label>
 					</div>
 					<div class="input-field col s4">
@@ -100,7 +103,7 @@
 		
 		
 			<div class="row center">
-				<button class="btn green" type="button" onclick="salvarCliente()">Salvar</button>
+				<button class="btn green" onclick="salvar()">Salvar</button>
 			</div>
 	</form>
 	</div>
