@@ -45,8 +45,8 @@
 			</div>
 			<div class="row">
 			<div class="input-field col s8">
-					<input id="nome" type="text">
-					<label for="nome">Nome</label>
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Nome</label>
 			</div>
 			<div class="input-field col s4">
 					<input id="data_nascimento" type="text">
@@ -55,11 +55,11 @@
 			</div>
 			<div class="row">
 				<div class="input-field col s4">
-					<input id="cpf" type="text">
-					<label for="cpf">CPF:</label>
+					<input id="cpf" type="number" data-length="11">
+					<label for="input_text">CPF:</label>
 				</div>
 				<div class="input-field col s4">
-					<input id="rg" type="text">
+					<input id="rg" type="number">
 					<label for="rg">RG:</label>
 				</div>
 				<div class="input-field col s4">
@@ -69,29 +69,29 @@
 			</div>
 			<div class="row">
 				<div class="input-field col s4">
-					<input id="email" type="text">
-					<label for="email">E-mail:</label>
+					<input id="email" type="text" class="validate">
+					<label for="email" data-error="wrong" data-sucess="rigth">E-mail:</label>
 				</div>
 				<div class="input-field col s4">
-						<input id="celular" type="text">
+						<input id="celular" type="number">
 						<label for="celular">Celular:</label>
 					</div>
 					<div class="input-field col s4">
-						<input id="telefone" type="text">
+						<input id="telefone" type="number">
 						<label for="telefone">Telefone:</label>
 					</div>
 			</div>
 			<div class="row">
 				<div class="input-field col s3">
-					<input id="quantidade_residencia" type="text">
+					<input id="quantidade_residencia" type="number">
 					<label for="quantidade_residencia">Qtd reside:</label>
 				</div>
 				<div class="input-field col s3">
-					<input id="maioresde16" type="text">
+					<input id="maioresde16" type="number">
 					<label for="maioresde16">Maiores de 16 anos:</label>
 				</div>
 				<div class="input-field col s3">
-					<input id="menoresde16" type="text">
+					<input id="menoresde16" type="number">
 					<label for="menoresde16">Menores de 16 anos:</label>
 				</div>
 			</div>
@@ -102,7 +102,7 @@
 			
 			<div class="row">
 				<div class="input-field col s5">
-					<input id="cep" type="text">
+					<input id="input_number" type="number" data-length="8">
 					<label for="cep">CEP:</label>
 				</div>
 			</div>
@@ -124,7 +124,7 @@
 					<label for="rua">Rua:</label>
 				</div>
 				<div class="input-field col s3">
-					<input id="numero" type="text">
+					<input id="numero" type="number">
 					<label for="numero">Número:</label>
 				</div>
 				<div class="input-field col s7">
@@ -144,8 +144,7 @@
 			
 
 	</div>
-	</form>
-	</div>
+
      			
 </body>
 </html>
