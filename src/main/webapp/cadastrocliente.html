@@ -40,19 +40,68 @@
 	
 	<form class="card-panel col m8 offset-m2 z-depth-5">
 	
-			<div class="row lefth">
+			<div class="row lefth green-text">
 		     	<h4>Dados Pessoais:</h4>
 			</div>
 			<div class="row">
-			<div class="input-field col s8">
+			<div class="input-field col s7">
 					<input id="nome" type="text" class="validate">
-					<label for="first_name">Nome</label>
+					<label for="first_name">Líder da Família:</label>
 			</div>
 			<div class="input-field col s4">
 					<input id="data_nascimento" type="text">
 					<label for="data_nascimento">Data de Nascimento:</label>
 			</div>
+			<div class="row">
+			<div class="input-field col s6">
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Nome</label>
 			</div>
+			<div class="input-field col s6">
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Cônjuge:</label>
+			</div>
+			</div>
+			<div class="row">
+			<div class="input-field col s5">
+					<input id="data_nascimento" type="text">
+					<label for="data_nascimento">Estado Civíl:</label>
+			</div>
+			</div>
+			
+			<div class="row">
+			<div class="input-field col s5">
+					<input id="data_nascimento" type="text">
+					<label for="data_nascimento">Recebe Bolsa Família:</label>
+			</div>
+			<div class="input-field col s5">
+					<input id="data_nascimento" type="text">
+					<label for="data_nascimento">Renda Familiar:</label>
+			</div>
+			</div>
+			
+			<div class="row">
+			<div class="input-field col s6">
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Profissão:</label>
+			</div>
+			<div class="input-field col s6">
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Estado Empregativo:</label>
+			</div>
+			</div>
+			<div class="row">
+			<div class="input-field col s6">
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Nível de Escolaridade:</label>
+			</div>
+			<div class="input-field col s5">
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Religião:</label>
+			</div>
+			</div>
+			
+			
 			<div class="row">
 				<div class="input-field col s4">
 					<input id="cpf" type="number" data-length="11">
@@ -84,7 +133,7 @@
 			<div class="row">
 				<div class="input-field col s3">
 					<input id="quantidade_residencia" type="number">
-					<label for="quantidade_residencia">Qtd reside:</label>
+					<label for="quantidade_residencia">Reside na casa:</label>
 				</div>
 				<div class="input-field col s3">
 					<input id="maioresde16" type="number">
@@ -96,8 +145,24 @@
 				</div>
 			</div>
 			
-			<div class="row lefth">
+			<div class="row lefth green-text">
 		     	<h4>Endereço:</h4>
+			</div>
+			<div class="row">
+				<div class="input-field col s6">
+					<input id="qtd_m_bairro" type="number">
+					<label for="qtd_m_bairro">Quanto tempo mora no bairro?</label>
+				</div>
+				<div class="input-field col s6">
+					<input id="qtd_m_cidade" type="number">
+					<label for="qtd_m_cidade">Quanto tempo mora na Cidade?</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s6">
+					<input id="tipo_da_residencia" type="text">
+					<label for="menoresde16">Tipo da Residência:</label>
+				</div>
 			</div>
 			
 			<div class="row">
@@ -138,13 +203,24 @@
 					<label for="reinvendicacao">*Reinvidicação:</label>
 				</div>
 			</div>
+			
+			<div class="row">
+			<div class="input-field col s6">
+					<input id="data_preenchimento" type="number">
+					<label for="data_preenchimento">Data de Preenchimento:</label>
+				</div>
+				<div class="input-field col s6">
+					<input id="rep_ficha" type="text">
+					<label for="rep_ficha">Responsável pela ficha:</label>
+				</div>
+			</div>
 			<div class="row center">
 				<button class="btn green" onclick="salvar()">Salvar</button>
 			</div>
-			
 
 	</div>
-
+	</form>
+	</div>
      			
 </body>
 </html>

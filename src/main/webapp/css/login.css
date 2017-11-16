@@ -28,10 +28,9 @@ img{
   border-radius: 50%;
   background: rgba(3,3,3,.8);
   overflow: hidden;
-  opacity: 0.4;
+  opacity: 0.6;
   box-shadow: 10px 10px 30px #000;}
 
-/* Login container */
 #container{
   position: absolute;
   top: 0;
@@ -66,10 +65,9 @@ img{
 }
 
 .close-btn:hover{
-  opacity: .5;
+  opacity: .6;
 }
 
-/* Heading */
 h1{
   font-family: 'Open Sans Condensed', sans-serif;
   position: relative;
@@ -80,7 +78,6 @@ h1{
   text-shadow: 3px 3px 10px #000;
 }
 
-/* Inputs */
 a,
 input{
   font-family: 'Open Sans Condensed', sans-serif;
@@ -107,17 +104,15 @@ input:focus{
   background: rgba(3,3,3,.18);
 }
 
-/* Placeholders */
 ::-webkit-input-placeholder {
    color: #ddd;  }
-:-moz-placeholder { /* Firefox 18- */
-   color: red;  }
-::-moz-placeholder {  /* Firefox 19+ */
-   color: red;  }
+:-moz-placeholder { 
+   color: green;  }
+::-moz-placeholder { 
+   color: green;  }
 :-ms-input-placeholder {  
    color: #333;  }
 
-/* Link */
 a{
   font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
