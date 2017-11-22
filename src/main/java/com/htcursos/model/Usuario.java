@@ -23,7 +23,6 @@ public class Usuario {
 	private String senha;
 	@JoinColumn
 	@ManyToOne
-	private Usuario_Role acesso;
 	
 	public Long getId() {
 		return id;
@@ -43,22 +42,6 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	public Usuario_Role getAcesso() {
-		return acesso;
-	}
-	public void setAcesso(Usuario_Role acesso) {
-		this.acesso = acesso;
-	}
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((acesso == null) ? 0 : acesso.hashCode());
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result + ((login == null) ? 0 : login.hashCode());
-		result = prime * result + ((senha == null) ? 0 : senha.hashCode());
-		return result;
-	}
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -68,11 +51,6 @@ public class Usuario {
 		if (getClass() != obj.getClass())
 			return false;
 		Usuario other = (Usuario) obj;
-		if (acesso == null) {
-			if (other.acesso != null)
-				return false;
-		} else if (!acesso.equals(other.acesso))
-			return false;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -92,7 +70,7 @@ public class Usuario {
 	}
 	@Override
 	public String toString() {
-		return "Usuario [id=" + id + ", login=" + login + ", senha=" + senha + ", acesso=" + acesso + "]";
+		return "Usuario [id=" + id + ", login=" + login + ", senha=" + senha + ", acesso=" + "]";
 	}
 	
 	
