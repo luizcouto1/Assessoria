@@ -1,8 +1,8 @@
-package com.htcursos.repository;
+package com.assessoria.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.htcursos.model.Usuario;
+import com.example.model.Usuario;
 
 public interface LoginRepository extends JpaRepository<Usuario, Long>{
 
