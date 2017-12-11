@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Cadastro de Assessor</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	
+	<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js">
+</script>
+
+<script src="js/candidato.js">
+</script>
+
+</head>
+
+<body>
+	<nav class="light-green darken-2 z-depth-5">
+		<div class="nav-wrapper">
+			<img width="125" src="imagens/GREEN SYSTEM ASSESSORIA.png">
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="telaprincipal.html">Página Inicial</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<div class="row center">
+		<h2 class="green-text text-darken-2">Cadastro Assessor</h2>
+	</div>
+	
+	<div class="row">
+	
+	<form class="card-panel col m9 offset-m2 z-depth-5">
+		
+		<div class="row">
+			<div class="input-field col s6">
+					<input id="nome" type="text" class="validate">
+					<label for="icon_prefix">Nome Completo:</label>
+			</div>
+			<div class="input-field col s6">
+					<input id="partido" type="text" class="validate">
+					<label for="partido">Partido:</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s6">
+					<input id="cargoPolitico" type="text" class="validate">
+					<label for="cargoPolitico">Cargo Político:</label>
+			</div>
+		</div>
+		<div class="row">
+				<div class="input-field col s4">
+					<input id="email" type="email" class="validate">
+					<label for="email"  data-error="wrong" data-success="right">E-mail:</label>
+				</div>
+				<div class="input-field col s4">
+						<input id="celular" type="number">
+						<label for="celular">Celular:</label>
+					</div>
+					<div class="input-field col s4">
+						<input id="telefone" type="number">
+						<label for="telefone">Telefone:</label>
+					</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s5">
+					<input id="cep" type="number" data-length="8" >
+					<label for="input_text">CEP:</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s5">
+					<input id="estado" type="text" >
+					<label for="estado">Estado:</label>
+				</div>
+				<div class="input-field col s5">
+					<input id="cidade" type="text" >
+					<label for="cidade">Cidade:</label>
+				</div>
+				<div class="input-field col s5">
+					<input id="bairro" type="text">
+					<label for="bairro">Bairro:</label>
+				</div>
+				<div class="input-field col s5">
+					<input id="rua" type="text">
+					<label for="rua">Rua:</label>
+				</div>
+				<div class="input-field col s3">
+					<input id="numero" type="number" >
+					<label for="numero">Número:</label>
+				</div>
+				<div class="input-field col s7">
+					<input id="complemento" type="text">
+					<label for="complemento">Complemento:</label>
+				</div>
+			</div>
+		
+		
+			<div class="row center">
+				<button class="btn green" onclick="salvar()">Salvar</button>
+			</div>
+	</form>
+	</div>
+     			
+</body>
+</html>

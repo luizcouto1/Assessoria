@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.example.model.Usuario;
-import com.example.repository.UsuarioRepository;
+import com.assessoria.model.Usuario;
+import com.assessoria.repository.UsuarioRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

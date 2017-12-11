@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="css/login.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+<script src="js/login.js"></script>
+
+
+<script src="js/validalogin.js"></script>
+
+</head>
+
+<body>
+
+
+<div id="login-button">
+  <img src="imagens/login-w-icon.png"></img>
+ 
+</div>
+<div id="container">
+  <h1>Log In</h1>
+  <span id="botao-fechar" class="close-btn">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+  </span>
+
+  <form>
+     <label for="login" ></label>
+    <input  id="login" type="text" name="login" placeholder="login" id="login" >
+    
+    <label for="senha" ></label>
+    <input id="senha" type="password" name="pass" placeholder="Senha" >
+    
+    <a id="btnentrar" href="telaprincipal.html">Entrar</a>
+    <div id="remember-container">
+      <input type="checkbox" id="checkbox-2-1" value="enviar" action="#{LoginMB.envia}" class="checkbox" checked="checked"/>
+      <span id="remember">Salvar Login</span>
+      <span id="forgotten"></span>
+    </div>
+</form>
+</div>
+
+<div id="forgotten-container">
+   <h1>Forgotten</h1>
+  <span class="close-btn">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+  </span>
+
+  <form>
+    <input type="email" name="email" placeholder="E-mail"/>
+    <a href="#" class="orange-btn"></a>
+
+</form>
+</div>
+</body>
+</html>

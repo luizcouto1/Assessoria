@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Cadastro de Clientes</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js">
+</script>
+<link rel="stylesheet" href="cadastrocliente.css"></link>
+<script src="js/cliente.js"></script>
+
+
+         
+
+</head>
+
+<body>
+<div class="w3-container w3-green">
+	<div id='bloco' style='background:url(imagem.jpg) no-repeat; min-width:100%;background-size:cover;'> </div>
+	<ul id="dropdown1" class="dropdown-content">
+  		<li><a href="cadastrocliente.html" data-beloworigin="true" data-activates="dropdown1">Clientes<i class="large material-icons">group_add</i></a></li>
+  		<li><a href="cadastrofuncionario.html" data-beloworigin="true" data-activates="dropdown1">Funcionários<i class="large material-icons">contacts</i></a></li>
+ 		<li class="divider"></li>
+ 		<li><a href="cadastrocandidato.html" data-beloworigin="true" data-activates="dropdown1">Assessor<i class="large material-icons">face</i></a></li>
+ 		<li class="divider"></li>
+ 		<li><a href="cadastrousuario.html" data-beloworigin="true" data-activates="dropdown1">Usuário<i class="large material-icons">account_circle</i></a></li>
+	</ul>
+	<ul id="dropdown2" class="dropdown-content">
+  		<li><a href="listaclientes.html" data-beloworigin="true" data-activates="dropdown2">Clientes<i class="large material-icons">assignment</i></a></li>
+  		<li><a href="listausuarios.html" data-beloworigin="true" data-activates="dropdown2">Usuários<i class="large material-icons">assignment_ind</i></a></li>
+ 		<li class="divider"></li>
+ 		<li><a href="listarreinvidi.html" data-beloworigin="true" data-activates="dropdown2">Reinvidicações<i class="large material-icons">description</i></a></li>
+	</ul>
+	<ul id="dropdown3" class="dropdown-content">
+  		<li><a href="cadastrocliente.html" data-beloworigin="true" data-activates="dropdown1">Clientes<i class="large material-icons">group_add</i></a></li>
+  		<li><a href="cadastrofuncionario.html" data-beloworigin="true" data-activates="dropdown1">Funcionários<i class="large material-icons">contacts</i></a></li>
+ 		<li class="divider"></li>
+ 		<li><a href="cadastrocandidato.html" data-beloworigin="true" data-activates="dropdown1">Assessor<i class="large material-icons">face</i></a></li>
+ 		<li class="divider"></li>
+ 		<li><a href="cadastrousuario.html" data-beloworigin="true" data-activates="dropdown1">Usuário<i class="large material-icons">account_circle</i></a></li>
+	</ul>
+	<ul id="dropdown4" class="dropdown-content">
+  		<li><a href="listaclientes.html" data-beloworigin="true" data-activates="dropdown2">Clientes<i class="large material-icons">assignment</i></a></li>
+  		<li><a href="listausuarios.html" data-beloworigin="true" data-activates="dropdown2">Usuários<i class="large material-icons">assignment_ind</i></a></li>
+ 		<li class="divider"></li>
+ 		<li><a href="listarreinvidi.html" data-beloworigin="true" data-activates="dropdown2">Reinvidicações<i class="large material-icons">description</i></a></li>
+	</ul>
+	</div>
+	<nav class="light-green darken-2 z-depth-5">
+  <div class="nav-wrapper">
+    <img width="125" src="imagens/GREEN SYSTEM ASSESSORIA.png" style="max-width:100%;height:auto;">
+   <div class="row left">
+   <ul id="slide-out" class="side-nav ">
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+          	<a class="collapsible-header" href="telaprincipal.html">Página Inicial<i class="material-icons">home</i></a>
+            <a class="dropdown-button" data-activates="dropdown3">Cadastrar<i class="material-icons">arrow_drop_down</i></a>
+            <a class="dropdown-button" data-activates="dropdown4">Listas<i class="material-icons">arrow_drop_down</i></a>
+           	<a class="collapsible-header" href="agenda.html">Agenda<i class="material-icons">calendar</i></a>
+            <div class="collapsible-body ">
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    </div>
+    <ul class="right hide-on-med-and-down">
+      
+      <li><a class="button" href="telaprincipal.html" data-activates="dropdown1">Página Inicial<i class="material-icons right">home</i></a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse left"><i class="material-icons">menu</i></a>
+          
+  </div>
+</nav>
+	
+	<div class="row center">
+		<h2 class="green-text text-darken-2">Cadastro de Cliente</h2>
+	</div>
+	
+	<div class="row">
+	
+	<form class="card-panel col m8 offset-m2 z-depth-5">
+	
+			<div class="row lefth green-text">
+		     	<h4>Dados Pessoais:</h4>
+			</div>
+			<div class="row">
+			<div class="input-field col s7">
+					<input id="lider_familia" type="text" class="validate">
+					<label for="first_name">Líder da Família:</label>
+			</div>
+			<div class="input-field col s4">
+					<input id="data_nascimento" type="text">
+					<label for="data_nascimento">Data de Nascimento:</label>
+			</div>
+			<div class="row">
+			<div class="input-field col s6">
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Nome</label>
+			</div>
+			<div class="input-field col s6">
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Cônjuge:</label>
+			</div>
+			</div>
+			<div class="row">
+			<div class="input-field col s5">
+					<input id="data_nascimento" type="text">
+					<label for="data_nascimento">Estado Civíl:</label>
+			</div>
+			</div>
+			
+			<div class="row">
+			<div class="input-field col s5">
+					<input id="data_nascimento" type="text">
+					<label for="data_nascimento">Recebe Bolsa Família:</label>
+			</div>
+			<div class="input-field col s5">
+					<input id="renda_fami" type="text">
+					<label for="data_nascimento">Renda Familiar:</label>
+			</div>
+			</div>
+			
+			<div class="row">
+			<div class="input-field col s6">
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Profissão:</label>
+			</div>
+			<div class="input-field col s6">
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Estado Empregativo:</label>
+			</div>
+			</div>
+			<div class="row">
+			<div class="input-field col s6">
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Nível de Escolaridade:</label>
+			</div>
+			<div class="input-field col s5">
+					<input id="nome" type="text" class="validate">
+					<label for="first_name">Religião:</label>
+			</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="input-field col s4">
+					<input id="cpf" type="number" data-length="11">
+					<label for="input_text">CPF:</label>
+				</div>
+				<div class="input-field col s4">
+					<input id="rg" type="number">
+					<label for="rg">RG:</label>
+				</div>
+				<div class="input-field col s4">
+					<input id="orgao_emissor" type="text">
+					<label for="orgao_emissor">Orgão Emissor:</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s4">
+					<input id="email" type="text" class="validate">
+					<label for="email" data-error="wrong" data-sucess="rigth">E-mail:</label>
+				</div>
+				<div class="input-field col s4">
+						<input id="celular" type="number">
+						<label for="celular">Celular:</label>
+					</div>
+					<div class="input-field col s4">
+						<input id="telefone" type="number">
+						<label for="telefone">Telefone:</label>
+					</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s3">
+					<input id="quantidade_residencia" type="number">
+					<label for="quantidade_residencia">Reside na casa:</label>
+				</div>
+				<div class="input-field col s3">
+					<input id="maioresde16" type="number">
+					<label for="maioresde16">Maiores de 16 anos:</label>
+				</div>
+				<div class="input-field col s3">
+					<input id="menoresde16" type="number">
+					<label for="menoresde16">Menores de 16 anos:</label>
+				</div>
+			</div>
+			
+			<div class="row lefth green-text">
+		     	<h4>Endereço:</h4>
+			</div>
+			<div class="row">
+				<div class="input-field col s6">
+					<input id="qtd_m_bairro" type="number">
+					<label for="qtd_m_bairro">Quanto tempo mora no bairro?</label>
+				</div>
+				<div class="input-field col s6">
+					<input id="qtd_m_cidade" type="number">
+					<label for="qtd_m_cidade">Quanto tempo mora na Cidade?</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s6">
+					<input id="tipo_da_residencia" type="text">
+					<label for="menoresde16">Tipo da Residência:</label>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="input-field col s5">
+					<input id="cep" type="number" data-length="8">
+					<label for="cep">CEP:</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s5">
+					<input id="estado" type="text">
+					<label for="estado">Estado:</label>
+				</div>
+				<div class="input-field col s5">
+					<input id="cidade" type="text">
+					<label for="cidade">Cidade:</label>
+				</div>
+				<div class="input-field col s5">
+					<input id="bairro" type="text">
+					<label for="bairro">Bairro:</label>
+				</div>
+				<div class="input-field col s5">
+					<input id="rua" type="text">
+					<label for="rua">Rua:</label>
+				</div>
+				<div class="input-field col s3">
+					<input id="numero" type="number">
+					<label for="numero">Número:</label>
+				</div>
+				<div class="input-field col s7">
+					<input id="complemento" type="text">
+					<label for="complemento">Complemento:</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<input id="reinvendicacao" type="text">
+					<label for="reinvendicacao">*Reinvidicação:</label>
+				</div>
+			</div>
+			
+			<div class="row">
+			<div class="input-field col s6">
+					<input id="data_preenchimento" type="text">
+					<label for="data_preenchimento">Data de Preenchimento:</label>
+				</div>
+				<div class="input-field col s6">
+					<input id="rep_ficha" type="text">
+					<label for="rep_ficha">Responsável pela ficha:</label>
+				</div>
+			</div>
+			<div class="row center">
+				<button class="btn green" onclick="salvar()">Salvar</button>
+			</div>
+
+	</div>
+	</form>
+	</div>
+     			
+</body>
+</html>

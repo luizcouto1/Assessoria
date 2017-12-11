@@ -8,7 +8,6 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>java:com.assessoria.Jweb2Application</config>
-		<config>src/main/java/com/assessoria/Jweb2Application.java</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
